@@ -1,0 +1,470 @@
+@import 'variables';
+
+@mixin tablet {
+    @media only screen and (min-width: $tablet-breakpoint){
+        .btn{
+            width: 10em;
+        }
+        .heading{
+            font-size: 30px;
+            line-height: 20px;
+            font-family: myfont-bold;
+            padding: 10px 0;
+        }
+        .header{
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            padding-left: 1.5em;
+            .active{
+                padding-bottom: 1.5em;
+                border-bottom: 5px solid white;
+            }
+            .navmenu{
+                &__list{
+                    margin-top: 1.9em;
+                    justify-content: flex-start;
+                }
+                &__item{
+                    padding-left: 2em;
+                    width: 8em;
+                }
+                &__link{
+                    display: inline-block;
+                    text-decoration: none;
+                    color: white;      
+                    &:hover{
+                        color: indianred;
+                    }      
+                }
+            }
+        }
+        .main{
+            .hero{
+                padding: 1.5em;
+                background-size: cover;
+                height: 25em;
+                &__heading{
+                    font-size: 4em;
+                }
+            }
+            .about{
+                padding: 1.5em;
+                margin: 0px;
+                &__banner{
+                    width: 720px;
+                    height: 362px;
+                }
+                &__textarea{
+                    display: flex;
+                    flex-flow: row nowrap;
+                }
+                &__text{
+                    padding-right: 1em;
+                }
+            }
+            .gallery{
+                background-color: #FAFAFA;
+                &__album{
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    padding: 1em 0;
+                }
+                &__photo{
+                    margin-bottom: 1em;
+                    width: 224px;
+                    height: 126px;
+                    &:hover{
+                        opacity: 1;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .form{
+                margin: 2em 8em;
+            }
+            .comments__container{
+                margin: 2em 8em;
+            }
+        }
+        .main__shows{
+            .showshero{
+                padding: 1em;
+                height: 30em;
+                opacity: 0.95;
+                background-image: url(../assets/hero/steve-johnson-d7JWDqIhfF4-unsplash.jpg);
+                display: flex;
+                justify-content: space-evenly;
+                flex-flow: column wrap;
+                background-size: cover;
+                color: white;
+                &__heading{
+                    font-size: 3.5em;
+                }
+                &:hover{
+                    opacity: 1;
+                }
+                iframe{
+                    width: 70%;
+                }
+            }
+            .shows{
+                .lbl{
+                    display: none;
+                }
+                .lbl-row{
+                    margin-top: 2em;
+                }
+                &__header{
+                    display: flex;
+                    justify-content: space-between;
+                    &-list{
+                        list-style-type: none;
+                        display: flex;
+                        justify-content: flex-end;                
+                    }
+                    &-item{
+                        width: 10rem;
+                        margin: 1em 1.5em 1em 0;
+                    }
+                }
+                &__heading{
+                    font-size: 2em;
+                }
+                &__unit{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: baseline;
+                    justify-content: space-around;
+                    border-bottom: 2px solid silver;
+                }
+                &__date{
+                    font-size: 1em;
+                    font-family: myfont-demi-bold;
+                }  
+                &__align{
+                    width: 15rem;
+                }
+            }
+        }
+        .footer{
+            display: flex;
+            flex-flow: column nowrap;
+            .social{
+                display: flex;
+                &__heading{
+                    margin-right: 2%;
+                    padding-top: 2%;
+                }
+                &__icon{
+                    padding: 1em;
+                    &--right{
+                        padding-left: 14em;
+                        visibility: visible;
+                    }
+                }
+            }
+            .contact{
+                display: flex;
+            }
+        }
+    }
+}
+@mixin desktop {
+    @media only screen and (min-width: $desktop-breakpoint){
+        .heading{
+            font-size: 42px;
+            line-height: 32px;
+        }
+        .header{
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            padding-left: 11.25em;
+            .active{
+                padding-bottom: 1.5em;
+                border-bottom: 5px solid white;
+            }
+            .navmenu{
+                &__list{
+                    margin-top: 1.9em;
+                    padding-left: 3.5em;
+                    justify-content: flex-start;
+                }
+                &__item{
+                    padding-left: 2em;
+                    width: 6em;
+                }
+                &__link{
+                    display: inline-block;
+                    text-decoration: none;
+                    color: white;      
+                    &:hover{
+                        color: indianred;
+                    }      
+                }
+            }
+        }
+        .main{
+            .hero{
+                padding: 0 11.25em;
+                height: 44em;
+                &__heading{
+                    font-size: 4em;
+                }
+            }
+            .about{
+                padding: 2em 11.25em;
+                &__wrapper{
+                    padding: 1em 5em;
+                }
+                &__slogan{
+                    width: 30em;
+                    font-size: 27px;
+                    line-height: 40px;
+                    font-family: myfont-bold;
+                    &--author{
+                        font-size: 18px;
+                        font-family: myfont-demi-bold;
+                        display: inline-block;  
+                        padding-top: 2em;
+                    }
+                }
+                &__artists{
+                    font-size: 27px;
+                    line-height: 22px;
+                    font-family: myfont-bold;
+                }
+                &__banner{
+                    width: 100%;
+                    height: 30em;
+                }
+                &__textarea{
+                    display: flex;
+                    flex-flow: row nowrap;
+                }
+                &__text{
+                    padding-right: 1.2em;
+                    font-size: 15px;
+                    line-height: 24px;
+                }
+            }
+            .gallery{
+                padding: 0 11.25em;
+                background-color: #FAFAFA;
+                &__album{
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    padding: 1em 0;
+                }
+                &__photo{
+                    margin-bottom: 1em;
+                    width: 21em;
+                    height: 12em;
+                    &:hover{
+                        opacity: 1;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .comments{
+                margin: 2em 11.25em;
+                &__heading{
+                    padding: 0;
+                }
+            }
+            .form{
+                margin: 2em 12em;
+            }
+            .comments__container{
+                margin: 2em 12em;
+            }
+        }
+        .main__shows{
+            .showshero{
+                padding: 1em;
+                height: 40em;
+                opacity: 0.92;
+                background-image: url(../assets/hero/steve-johnson-d7JWDqIhfF4-unsplash.jpg);
+                display: flex;
+                align-items: center;
+                flex-flow: column wrap;
+                background-size: cover;
+                color: white;
+                &__heading{
+                    font-size: 4em;
+                    width: 50%;
+                    padding: 1em 0;
+                }
+                &:hover{
+                    opacity: 1;
+                }
+                iframe{
+                    align-self: center;
+                    width: 40%;
+                }
+            }
+            .shows{
+                margin: 1em 11.25em;
+                .lbl{
+                    visibility: hidden;
+                }
+                &__header{
+                    display: flex;
+                    justify-content: space-between;
+                    &-list{
+                        list-style-type: none;
+                        display: flex;
+                        justify-content: flex-end;                
+                    }
+                    &-item{
+                        width: 10rem;
+                        margin: 1em 5.5em 1em 0;
+                        font-size: larger;                         
+                    }
+                }
+                &__heading{
+                    font-size: 3em;
+                    padding: 1em 0;
+                }
+                &__unit{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: baseline;
+                    justify-content: space-between;
+                    border-bottom: 2px solid silver;
+                }
+            }
+        }
+        .footer{
+            padding: 2em 11.25em;
+            display: flex;
+            flex-flow: column nowrap;
+            .social{
+                display: flex;
+                &__heading{
+                    margin-right: 2%;
+                    padding-top: 1em;
+                    font-size: 42px;
+                }
+                &__subnav{
+                    width: 50em;
+                }
+                &__icon{
+                    margin-top: 1.9em;
+                    padding: 1em;
+                    &--right{
+                        padding-left: 31em;
+                        visibility: visible;
+                    }
+                }
+            }
+            .contact{
+                display: flex;
+                &__details{
+                    margin-right: 100px;
+                }
+                &__person{
+                    padding-bottom: 24px;
+                    color: white;
+                    font-size: 18px;
+                }
+                &__address{
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding-bottom: 2em;
+                }
+                &__email{
+                    font-size: 14px;
+                    padding-bottom: 1em;
+                    a{
+                        color: silver;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }            
+            }
+            .legal{
+                color: silver;
+                &__copyright{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@mixin largescreen {
+    @media only screen and (min-width: $largeScreen-breakpoint){
+        .heading{
+            font-size: 3em;
+        }
+        .gallery{
+            &__album{
+                margin: 2em 35em;
+            }
+        }
+        .comments{
+            &__container{
+                padding: 1em 20em;
+            }
+        }
+        .form{
+            padding: 1em 20em;
+        }
+        .main__shows{
+            .shows{
+                margin: 1em 30em;
+                .lbl{
+                    visibility: hidden;
+                }
+                &__header{
+                    display: flex;
+                    justify-content: space-between;
+                    &-list{
+                        list-style-type: none;
+                        display: flex;
+                        justify-content: flex-end;                
+                    }
+                    &-item{
+                        width: 10rem;
+                        margin: 1em 10.5em 1em 3em;
+                        font-size: larger;                         
+                    }
+                }
+                &__unit{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: baseline;
+                    justify-content: space-between;
+                    border-bottom: 2px solid silver;
+                }  
+                &__align{
+                    justify-content: flex-start;
+                    width: 20rem;
+                }
+            }
+        }
+        .footer{
+            justify-content: center;
+            align-items: center;
+            padding: 2em 10em;
+        }
+        .footer > *{
+            width: 100%;
+        }
+        .contact{
+            justify-content: center;
+        }
+        .social{
+            justify-content: center;
+        }
+        .legal{
+            text-align: center;
+        }
+    }
+}

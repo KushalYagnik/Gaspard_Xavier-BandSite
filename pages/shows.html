@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The happening website for an up-and-coming band">
+    <meta name="keywords" content="Music, Band, BandSite, Shows, Concerts">
+    <meta name="author" content="Kushal Yagnik">
+    <title>BandSite</title>
+    <link rel="stylesheet" href="../scss/main.css">
+</head>
+<body>
+    
+    <header class="header">
+        <a href="../index.html" class="logo-wrapper">
+            <img class="logo" src="../assets/logo/Logo-bandsite-NEW.svg" alt="bandsite-logo">
+        </a>
+        <nav class="navmenu">
+            <ul class="navmenu__list">
+                <li class="navmenu__item">
+                    <a class="link navmenu__link" href="../index.html">Biography</a>
+                </li>
+                <li class="navmenu__item">
+                    <a class="link navmenu__link active" href="shows.html">Shows</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main__shows">
+        
+        <div class="showshero">
+            <h3 class="showshero__albumheader">Woman Worldwide Album</h3>
+            <h1 class="showshero__heading">Waters of Nazareth x We Are your Friends x Phantom</h1>
+            <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/535872399&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
+        </div>
+        
+        <div class="shows">
+            <h2 class="shows__heading heading">Shows</h2>
+            <div class="shows__header">
+                
+                <ul class="shows__header-list">
+                    <li class="shows__header-item lbl-row">Dates</li>
+                    <li class="shows__header-item lbl-row">Venue</li>
+                    <li class="shows__header-item lbl-row">Location</li>
+                </ul>
+            </div>
+            <div class="shows__container">
+                
+            </div>
+        </div>        
+    </main>
+    
+    <footer class="footer">
+        <div class="social">
+            <h2 class="social__heading heading">Get In Touch</h2>
+            <nav class="social__subnav">
+                <img class="social__icon" src="../assets/icons/svg/Icon-instagram.svg" alt="insta-icon">
+                <img class="social__icon" src="../assets/icons/svg/Icon-facebook.svg" alt="fb-icon">
+                <img class="social__icon" src="../assets/icons/svg/Icon-twitter.svg" alt="twitter-icon">
+                <img class="social__icon social__icon--right" src="../assets/logo/Logo-bandsite-NEW.svg" alt="logo-footer-icon">
+            </nav>
+        </div>
+        <div class="contact">
+            <div class="contact__details">
+                <h4 class="contact__person">Richard Rovner<br/>The Bees Knees Management</h4>
+                <p class="contact__address">460 King Street West<br/>Toronto, Ontario M5V 1L7</p>
+                <p class="contact__email"><a href="mailto:info@thebeesknees.com">info@thebeesknees.com</a></p>
+            </div>
+            <div class="contact__details">
+                <h4 class="contact__person">Marsha Vlasic<br/>Artist Group International</h4>
+                <p class="contact__address">Booking Agent for<br/>US / South America / Japan</p>
+                <p class="contact__email"><a href="mailto:marsha.vlasic@artistgrp.com">marsha.vlasic@artistgrp.com</a></p>
+            </div>
+            <div class="contact__details">
+                <h4 class="contact__person">Russel Warby<br/>William Morrir Entertainment </h4>
+                <p class="contact__address">Booking Agent for<br/>UK / EU / AU</p>
+                <p class="contact__email"><a href="mailto:RLW@wmeentertainment.com">RLW@wmeentertainment.com</a></p>
+            </div>
+        </div>
+        <div class="legal">
+            <p class="legal__copyright">Copyright The Bees Knees © 2018 All Rights Reserved</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+    <script src="../scripts/showsScript.js"></script>
+</body>
+</html>
