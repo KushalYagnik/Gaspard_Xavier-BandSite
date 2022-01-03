@@ -26,7 +26,7 @@ const parseShows = (param) => {
 
   let date = document.createElement("h3");
   date.className = "shows__date shows__align";
-  date.innerText = param.date;
+  date.innerText = new Date(parseInt(param.date)).toUTCString();
   showsUnit.appendChild(date);
 
   let label2 = document.createElement("label");
